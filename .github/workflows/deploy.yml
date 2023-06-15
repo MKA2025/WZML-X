@@ -15,6 +15,6 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PW }}
     - name: Building docker
-      run: docker image build . -t "${{ secrets.DOCKER_HUB_USERNAME }}"/main:tidal-music-docker
+      run: docker image build . -t "${{ secrets.DOCKER_HUB_USERNAME }}"/main:wzml-x
     - name: Pushing docker to docker.io
-      run: docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/main:tidal-music-docker
+      run: docker push "${{ secrets.DOCKER_HUB_USERNAME }}"/main:wzml-x
